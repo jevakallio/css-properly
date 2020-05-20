@@ -43,6 +43,13 @@ it('translates "capitalise" prop to "capitalize"', async () => {
   )
 })
 
+it('translates "z-index" prop to "z-index"', async () => {
+  await run(
+    'div{ z-index: 1 }',
+    'div{ z-index: 1 }', { }
+  )
+})
+
 it('translates "behaviour" prop to "behavior"', async () => {
   await run(
     'div{ scroll-behaviour: smooth }',
