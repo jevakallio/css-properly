@@ -46,7 +46,14 @@ it('translates "capitalise" prop to "capitalize"', async () => {
 it('doesn\'t break values that contain any of the translated value words', async () => {
   await run(
     // should be identical
-    'div{ background-image: url("capitalise-centre"); }',
-    'div{ background-image: url("capitalise-centre"); }', { }
+    `div{
+      background-image: url("centrepoint.png");
+      text-transform: --var(capitalise-headings);
+    }`,
+    `div{
+      background-image: url("centrepoint.png");
+      text-transform: --var(capitalise-headings);
+    }`,
+    { }
   )
 })
