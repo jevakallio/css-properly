@@ -4,22 +4,24 @@
 
 [PostCSS]: https://github.com/postcss/postcss
 
-```diff
+```css
 .foo {
--  background-colour: white;
--  text-align: centre;
-+  background-color: white;
-+  text-align: center;
+  colour: black;
+  background-colour: lightgrey;
+  text-align: centre;
+}
 ```
 
 ## Supported translations:
 
 | From (Proper) | To (American) | Rationale |
 |---------------|---------------|-----------|
-| colour | `color` | There's a `u` in `colour` |
-| centre | `center` | It's spelled `centre` |
-| padding-ton | `padding-top` | When you're thinking of your favourite bear |
-| z-index | `z-index` | It's the same but it's pronounced "zed", not "zee" |
+| `colour` | `color` | There's a *u* in "colour" |
+| `centre` | `center` | It's spelled "centre" |
+| `padding-ton` | `padding-top` | When you're thinking of your favourite bear |
+| `z-index` | `z-index` | It's the same but it's pronounced "zed", not "zee" |
+
+Pull requests for further translations welcome!
 
 ## Usage
 
