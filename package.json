@@ -1,6 +1,6 @@
 {
   "name": "css-properly",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "PostCSS plugin for people who prefer to write English",
   "keywords": [
     "postcss",
