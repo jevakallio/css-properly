@@ -42,3 +42,10 @@ it('translates "capitalise" prop to "capitalize"', async () => {
     'div{ text-transform: capitalize }', { }
   )
 })
+
+it('translates "z-index" prop to "z-index"', async () => {
+  await run(
+    'div{ z-index: 1 }',
+    'div{ z-index: 1 }', { }
+  )
+})
