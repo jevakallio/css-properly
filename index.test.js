@@ -49,3 +49,10 @@ it('translates "z-index" prop to "z-index"', async () => {
     'div{ z-index: 1 }', { }
   )
 })
+
+it('translates "behaviour" prop to "behavior"', async () => {
+  await run(
+    'div{ scroll-behaviour: smooth }',
+    'div{ scroll-behavior: smooth }', { }
+  )
+})
