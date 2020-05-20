@@ -42,3 +42,10 @@ it('translates "capitalise" prop to "capitalize"', async () => {
     'div{ text-transform: capitalize }', { }
   )
 })
+
+it('translates "behaviour" prop to "behavior"', async () => {
+  await run(
+    'div{ scroll-behaviour: smooth }',
+    'div{ scroll-behavior: smooth }', { }
+  )
+})

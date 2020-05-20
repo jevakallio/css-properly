@@ -21,6 +21,7 @@
 | `capitalise` | `capitalize` | Don't even get me started |
 | `padding-ton` | `padding-top` | When you're thinking of your favourite bear |
 | `z-index` | `z-index` | It's the same but it's pronounced "zed", not "zee" |
+| `behaviour` | `behavior` | Oh, behave! |
 
 Pull requests for further translations welcome!
 
