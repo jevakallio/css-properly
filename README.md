@@ -18,6 +18,7 @@
 |---------------|---------------|-----------|
 | `colour` | `color` | There's a *u* in "colour" |
 | `centre` | `center` | It's spelled "centre" |
+| `capitalise` | `capitalize` | Don't even get me started |
 | `padding-ton` | `padding-top` | When you're thinking of your favourite bear |
 | `z-index` | `z-index` | It's the same but it's pronounced "zed", not "zee" |
 

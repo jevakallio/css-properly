@@ -35,3 +35,10 @@ it('translates "padding-ton" prop to "padding-top"', async () => {
     'div{ padding-top: 10px }', { }
   )
 })
+
+it('translates "capitalise" prop to "capitalize"', async () => {
+  await run(
+    'div{ text-transform: capitalise }',
+    'div{ text-transform: capitalize }', { }
+  )
+})
