@@ -27,6 +27,12 @@ Pull requests for further translations welcome!
 
 ### As a PostCSS plugin
 
+Assuming you are using npm to manage dependencies, install `css-properly` with:
+
+```sh
+  npm install --save-dev css-properly
+```
+
 Check your project for existing PostCSS config: `postcss.config.js`
 in the project root, `"postcss"` section in `package.json`
 or `postcss` in bundle config.
