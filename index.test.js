@@ -29,7 +29,7 @@ it('translates values including "centre" to "center"', async () => {
   )
 })
 
-it('translates "padding-ton" prop to "padding-ton"', async () => {
+it('translates "padding-ton" prop to "padding-top"', async () => {
   await run(
     'div{ padding-ton: 10px }',
     'div{ padding-top: 10px }', { }
