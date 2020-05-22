@@ -7,6 +7,7 @@ module.exports = postcss.plugin('css-properly', () => {
         .replace('colour', 'color')
         .replace('padding-ton', 'padding-top')
         .replace('behaviour', 'behavior')
+        .replace('z-index', 'z-index')
       d.value = d.value
         .replace('centre', 'center')
         .replace('capitalise', 'capitalize')
