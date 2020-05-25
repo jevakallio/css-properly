@@ -75,6 +75,6 @@ Follow your heart:
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENCE)
 
 
