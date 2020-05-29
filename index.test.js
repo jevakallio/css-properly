@@ -57,17 +57,34 @@ it('translates "behaviour" prop to "behavior"', async () => {
   )
 })
 
-it('doesn\'t break values that contain any of the translated value words', async () => {
-  await run(
-    // should be identical
-    `div{
-      background-image: url("centrepoint.png");
-      text-transform: --var(capitalise-headings);
-    }`,
-    `div{
-      background-image: url("centrepoint.png");
-      text-transform: --var(capitalise-headings);
-    }`,
-    { }
-  )
-})
+it(
+  'doesn\'t change variables that contain any of the translated value words',
+  async () => {
+    await run(
+      `div{
+        --logo-colour-image: url("logo-centre.png");
+        background-image: var(--logo-colour-image);
+      }`,
+      `div{
+        --logo-colour-image: url("logo-centre.png");
+        background-image: var(--logo-colour-image);
+      }`,
+      { }
+    )
+  }
+)
+
+it(
+  'doesn\'t change url paths that contain any of the translated value words',
+  async () => {
+    await run(
+      `div{
+        background-image: url("centrepoint.png");
+      }`,
+      `div{
+        background-image: url("centrepoint.png");
+      }`,
+      { }
+    )
+  }
+)
