@@ -14,6 +14,18 @@ module.exports = postcss.plugin('css-properly', () => {
           .replace('centre', 'center')
           .replace('capitalise', 'capitalize')
       }
+      if (decl.prop === 'transparency') {
+        decl.prop = 'opacity'
+        if (
+          Number(decl.value) == decl.value &&
+          parseFloat(decl.value) <= 1 &&
+          parseFloat(decl.value) >= 0
+        ) {
+          decl.value = (1 - parseFloat(decl.value)).toFixed(
+            (Number(decl.value) + '').replace('.', '').length - 1
+          )
+        }
+      }
     })
   }
 })
