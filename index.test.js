@@ -57,6 +57,13 @@ it('translates "behaviour" prop to "behavior"', async () => {
   )
 })
 
+it('translates "transparency" prop to "opacity", and inverses the value', async () => {
+  await run(
+    'div{ transparency: 0.3 }',
+    'div{ opacity: 0.7 }', { }
+  )
+})
+
 it(
   'doesn\'t change variables that contain any of the translated value words',
   async () => {
