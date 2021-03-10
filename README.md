@@ -9,6 +9,16 @@
   colour: black;
   background-colour: lightgrey;
   text-align: centre;
+  transparency: 0.4;
+}
+```
+becomes 
+```css
+.foo {
+  color: black;
+  background-color: lightgrey;
+  text-align: center;
+  opacity: 0.6;
 }
 ```
 
@@ -22,6 +32,7 @@
 | `padding-ton` | `padding-top` | When you're thinking of your favourite bear |
 | `z-index` | `z-index` | It's the same but it's pronounced "zed", not "zee" |
 | `behaviour` | `behavior` | Oh, behave! |
+| `transparency` | `opacity` | The queen uses sophisticated words, and we must too. |
 
 Pull requests for further translations welcome!
 
