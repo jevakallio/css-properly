@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": "jevakallio/css-properly",
   "dependencies": {
-    "postcss": "^7.0.18"
+    "postcss": "^8.2.10"
   },
   "devDependencies": {
     "@logux/eslint-config": "^33.0.0",
